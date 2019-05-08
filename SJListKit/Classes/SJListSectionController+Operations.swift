@@ -82,7 +82,7 @@ public extension SJListSectionControllerOperationsProtocol {
     /// Reloads all data
     ///
     /// - Parameter animated: animated
-    public func reload(animated: Bool = true) {
+    func reload(animated: Bool = true) {
         reload(animated: animated,
                completion: nil)
     }
@@ -93,7 +93,7 @@ public extension SJListSectionControllerOperationsProtocol {
     ///   - indexes: indexies of updates
     ///   - animated: animated
     ///   - completion: completion block
-    public func reload(at indexes: IndexSet,
+    func reload(at indexes: IndexSet,
                        animated: Bool = true,
                        completion: ((Bool) -> Void)? = nil) {
         update(inserted: nil,
@@ -113,7 +113,7 @@ public extension SJListSectionControllerOperationsProtocol {
     ///   - moved: movements
     ///   - animated: animated
     ///   - completion: completion block
-    public func update(inserted: IndexSet? = nil,
+    func update(inserted: IndexSet? = nil,
                        deleted: IndexSet? = nil,
                        updated: IndexSet? = nil,
                        moved: [SJCollectionViewCellMovement]? = nil,
@@ -133,7 +133,7 @@ public extension SJListSectionControllerOperationsProtocol {
     ///   - indexes: indexies of deletions
     ///   - animated: animated
     ///   - completion: completion block
-    public func delete(at indexes: IndexSet,
+    func delete(at indexes: IndexSet,
                        animated: Bool = true,
                        completion: ((Bool) -> Void)? = nil) {
         update(inserted: nil,
@@ -150,7 +150,7 @@ public extension SJListSectionControllerOperationsProtocol {
     ///   - indexes: indexies of deletions
     ///   - animated: animated
     ///   - completion: completion block
-    public func insert(at indexes: IndexSet,
+    func insert(at indexes: IndexSet,
                        animated: Bool = true,
                        completion: ((Bool) -> Void)? = nil) {
         update(inserted: indexes,

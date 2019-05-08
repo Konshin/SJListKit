@@ -18,12 +18,13 @@ Main features are:
   s.source           = { :git => 'https://github.com/superjobru/SJListKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/adanilyak'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.source_files = 'SJListKit/Classes/**/*'
+  s.swift_version = '5.0'
 
   s.dependency 'IGListKit', '~> 3.0'
-  s.dependency 'RxSwift',   '~> 4.0'
-  s.dependency 'RxCocoa',   '~> 4.0'
+  s.dependency 'RxSwift',   '~> 5.0'
+  s.dependency 'RxCocoa',   '~> 5.0'
   s.dependency 'SnapKit',   '~> 4.0'
 
 end
